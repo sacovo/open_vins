@@ -117,7 +117,7 @@ public:
   void callback_monocular(const sensor_msgs::msg::Image::SharedPtr msg0, int cam_id0);
 
   /// Callback for synchronized stereo camera information
-  void callback_stereo(const sensor_msgs::msg::Image::ConstSharedPtr msg0, const sensor_msgs::msg::CompressedImage::ConstSharedPtr msg1, int cam_id0,
+  void callback_stereo(const sensor_msgs::msg::Image::ConstSharedPtr msg0, const sensor_msgs::msg::Image::ConstSharedPtr msg1, int cam_id0,
                        int cam_id1);
 
   void callback_monocular_C(const sensor_msgs::msg::CompressedImage::SharedPtr msg0, int cam_id0);
